@@ -1,0 +1,8 @@
+03-prompt.html
+les boîtes de dialogue permettent d'interagir avec l'utilisateur en affichant des messages ou en recueillant des informations. 
+ prompt() : Boîte de saisie
+La fonction prompt() affiche une boîte de dialogue avec un champ de saisie où l'utilisateur peut entrer du texte, ainsi que deux boutons : "OK" et "Annuler". 
+Elle est utile pour obtenir une entrée de l'utilisateur. 
+Si l'utilisateur entre quelque chose et clique sur "OK", prompt() retourne le texte saisi. 
+Si l'utilisateur clique sur "Annuler", elle retourne null.
+let nom = prompt("Quel est votre nom ?");

@@ -1,0 +1,6 @@
+ * les boîtes de dialogue permettent d'interagir avec l'utilisateur en affichant des messages ou en recueillant des informations. 
+ 
+1. alert() : Boîte d'alerte
+La fonction alert() affiche une boîte de dialogue avec un message et un bouton "OK". 
+Elle est utilisée pour informer l'utilisateur de quelque chose, comme une notification ou un avertissement.
+alert("Message d'alerte");

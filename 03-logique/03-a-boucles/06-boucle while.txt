@@ -1,0 +1,17 @@
+06-while
+
+/*
+
+La boucle while est utilisée quand le nombre d’itérations n’est pas connu à l’avance. 
+Elle continue de s’exécuter tant qu’une condition est vraie.
+    while (condition) {
+        // Code à exécuter tant que la condition est vraie
+    }
+
+let compteur = 0;
+    while (compteur < 5) {
+        console.log("Compteur : ", compteur);
+        compteur++; // Incrémente le compteur pour éviter une boucle infinie
+    }
+
+*/

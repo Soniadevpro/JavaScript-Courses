@@ -1,0 +1,24 @@
+03-variable.html
+ /**
+var : Utilisé pour déclarer des variables dans les anciennes versions de JavaScript. 
+    Les variables déclarées avec var sont globales ou fonctionnelles (elles ignorent les blocs comme les boucles et conditions). 
+    Aujourd'hui, let et const sont préférés pour une meilleure gestion des variables.
+
+let : 
+    Permet de déclarer une variable qui est limitée à son bloc de code (par exemple, dans une boucle ou une condition). 
+    On peut changer la valeur d'une variable let après l'avoir déclarée.
+
+const :     
+    Utilisé pour déclarer une constante, 
+    c'est-à-dire une variable dont la valeur ne peut pas être modifiée après l'initialisation.
+    Comme let, elle est aussi limitée à son bloc.
+
+Ces trois types de déclaration aident à mieux gérer les variables et éviter les erreurs.
+ */
+ ///////////
+ 03-variable
+ /*1
+ Déclare une variable nom avec var et assigne-lui ton prénom. 
+Ensuite, modifie la valeur de nom avec ton nom de famille 
+et affiche la phrase "Mon nom est maintenant : [valeur de nom]" dans la console.
+*/

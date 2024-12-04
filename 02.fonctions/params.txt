@@ -1,0 +1,12 @@
+  06-params.html
+    /*
+Les paramètres par défaut dans les fonctions permettent de donner une valeur initiale à un paramètre si aucun argument n'est passé lors de l'appel de la fonction. 
+Cela rend les fonctions plus flexibles et évite les erreurs en l’absence de certains arguments.
+On définit des paramètres par défaut en assignant une valeur directement dans la définition des paramètres de la fonction. 
+Si la fonction est appelée sans cet argument, la valeur par défaut sera utilisée.
+function saluer(nom = "inconnu") {
+    console.log("Bonjour, " + nom + " !");
+}
+Si un argument est passé, il remplace la valeur par défaut.
+ Si aucun argument n'est passé, la valeur par défaut est utilisée.
+*/

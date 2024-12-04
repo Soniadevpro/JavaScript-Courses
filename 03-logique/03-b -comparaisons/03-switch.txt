@@ -1,0 +1,21 @@
+*/
+////////////////////////////////////
+03-switch.html
+      /*
+        Le mot-clé switch en JavaScript permet de comparer une expression à plusieurs valeurs possibles et d exécuter un bloc de code en fonction de la valeur correspondante. 
+Il est souvent utilisé pour simplifier les conditions multiples avec if...else if...else.
+La structure switch teste la valeur d’une expression (ou d’une variable) et exécute le bloc de code correspondant au case qui correspond à cette valeur.
+
+
+switch (expression) {
+    case valeur1:
+        // Code exécuté si expression === valeur1
+        break;
+    case valeur2:
+        // Code exécuté si expression === valeur2
+        break;
+    ...
+    default:
+        // Code exécuté si aucune des valeurs précédentes ne correspond
+}
+*/

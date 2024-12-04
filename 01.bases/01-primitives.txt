@@ -1,0 +1,39 @@
+Cours Javascript
+------------------------------
+
+Les bases : 
+
+
+Les types primitifs en JavaScript sont les types de données les plus simples et de base. 
+Ils représentent des valeurs immuables 
+En JavaScript, ils incluent : Number, String, Boolean, Undefined, Null
+
+Number : 
+    Ce type représente tous les nombres, 
+    qu’ils soient entiers (comme 1, 2, 100) ou décimaux (comme 3.14, 0.5). 
+    il n'y a pas de distinction entre les entiers et les nombres à virgule flottante ; 
+    ils sont tous considérés comme des Number.
+
+String : 
+    Ce type est utilisé pour représenter des chaînes de caractères, 
+    c’est-à-dire du texte. 
+    Une chaîne peut contenir des lettres, des chiffres, des symboles et même des espaces. 
+    Les chaînes sont délimitées par des guillemets simples ou doubles.
+
+Boolean : 
+    Ce type représente une valeur logique et ne peut prendre que deux valeurs : 
+        true (vrai) ou false (faux). 
+    Il est souvent utilisé pour indiquer 
+    des conditions, des états ou des résultats de comparaison.
+
+Undefined : 
+    Ce type est attribué automatiquement à une variable lorsqu’elle est déclarée, 
+    mais qu'aucune valeur ne lui est assignée. 
+    C’est une façon de dire que la variable existe, 
+    mais qu'elle n'a encore aucune valeur définie.
+
+Null : 
+    Ce type représente une valeur vide ou intentionnellement absente. 
+    Contrairement à undefined, qui indique une absence de valeur définie, 
+    null signifie qu'une variable est explicitement vide.
+

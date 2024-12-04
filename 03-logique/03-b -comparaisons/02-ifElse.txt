@@ -1,0 +1,27 @@
+02-ifElse.html
+
+
+La structure conditionnelle la plus courante est la déclaration if. 
+Elle permet d’exécuter un bloc de code uniquement si une condition est évaluée à true.
+    if (condition) {
+        // Code exécuté si la condition est vraie
+    }
+    Si la condition est false, le code à l'intérieur des accolades {} est ignoré.
+
+if...else: On peut utiliser else pour définir un bloc de code qui s'exécute lorsque la condition est false.
+    if (condition) {
+        // Code exécuté si la condition est vraie
+    } else {
+        // Code exécuté si la condition est fausse
+    }
+
+if...else if...else: 
+On peut ajouter plusieurs conditions avec else if. 
+Si la première condition est false, le programme teste les conditions suivantes.
+    if (condition1) {
+        // Exécute ce code si condition1 est vraie
+    } else if (condition2) {
+        // Exécute ce code si condition2 est vraie
+    } else {
+        // Exécute ce code si aucune des conditions précédentes n'est vraie
+    }

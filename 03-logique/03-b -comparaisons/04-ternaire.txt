@@ -1,0 +1,16 @@
+04-ternaire.html
+/*
+
+***************************** Opérateur Ternaire ****************************
+
+L’opérateur ternaire est une façon concise d'écrire une condition if...else en une seule ligne. 
+Il est utilisé pour retourner une valeur en fonction d'une condition, en simplifiant le code pour des cas simples.
+Syntaxe de l'Opérateur Ternaire :
+
+	condition ? valeur_si_vrai : valeur_si_faux;
+
+condition : Une expression qui sera évaluée (doit renvoyer true ou false).
+valeur_si_vrai : La valeur renvoyée si la condition est true.
+ valeur_si_faux : La valeur renvoyée si la condition est false.
+
+*/

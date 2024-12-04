@@ -1,0 +1,11 @@
+  05-return.html
+    Le mot-clé return est utilisé dans les fonctions pour renvoyer une valeur à l’endroit où la fonction est appelée. Cela permet de récupérer le résultat de la fonction et de l’utiliser ailleurs dans le code. Lorsqu’une fonction atteint une instruction return, elle s'arrête immédiatement
+Une fonction peut exécuter plusieurs instructions, puis renvoyer une valeur avec return. Cette valeur peut ensuite être stockée dans une variable ou utilisée dans d'autres expressions.
+
+
+
+
+function avecReturn() {
+    return "je suis la valeur de retour";
+}
+let resultat = avecReturn();   // resultat "je suis la valeur de retour"

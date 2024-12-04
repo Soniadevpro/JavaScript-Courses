@@ -1,0 +1,39 @@
+04-operateurs
+les opérations mathématiques de base permettent de manipuler et de calculer des valeurs numériques.
+
+Voici les principales opérations :
+1. Addition (+)
+    L’addition est utilisée pour additionner deux nombres ou plus.
+    Elle permet d'obtenir la somme de plusieurs valeurs numériques.
+
+2. Soustraction (-)
+    La soustraction permet de retirer une valeur d’une autre,
+    en calculant la différence entre deux nombres.
+
+3. Multiplication (*)
+    La multiplication est utilisée pour calculer le produit de deux nombres ou plus.
+    Elle permet de multiplier des valeurs ensemble.
+
+4. Division (/)
+    La division divise un nombre par un autre, produisant un quotient.
+    Si le diviseur est zéro, JavaScript renverra Infinity ou NaN (Not a Number) selon les cas.
+
+5. Modulo (%)
+    Le modulo retourne le reste d’une division entre deux nombres.
+    C’est une opération utile pour déterminer si un nombre est pair, impair, ou pour obtenir le reste d'une division.
+
+6. Exponentiation (**)
+    L’exponentiation permet d'élever un nombre à une puissance spécifique.
+    Par exemple, pour calculer le carré ou le cube d'un nombre.
+
+7. Incrémentation et Décrémentation (++ et --)
+    L'incrémentation (++) augmente la valeur d’une variable de 1,
+    tandis que la décrémentation (--) la diminue de 1.
+    Ces opérations sont souvent utilisées dans les boucles et les itérations.
+
+8. Opérateurs d’affectation avec des opérations (+=, -=, *=, /=)
+    Ces opérateurs combinent l’affectation avec une opération mathématique.
+    Par exemple, += additionne une valeur à une variable existante et assigne le résultat à cette variable.
+
+Ces opérations mathématiques permettent d’effectuer des calculs et sont essentielles pour manipuler des valeurs numériques dans le code.
+ */

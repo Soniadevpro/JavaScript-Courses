@@ -1,0 +1,19 @@
+/:////////////////
+07-for.html
+
+/*
+La Boucle for
+La boucle for est utilisée quand on sait à l'avance combien de fois on veut répéter un bloc de code. Elle est composée de trois parties :
+•	Initialisation : On définit une variable de compteur (généralement i).
+•	Condition : La boucle s'exécute tant que cette condition est vraie.
+•	Incrémentation : À la fin de chaque itération, la variable de compteur est modifiée (généralement augmentée de 1).
+
+
+
+for (initialisation; condition; incrémentation) {
+    // Code à exécuter à chaque itération
+}
+for (let i = 0; i < 5; i++) {
+    console.log("Itération n°", i); // Affiche chaque numéro d'itération de 0 à 4
+}
+*/

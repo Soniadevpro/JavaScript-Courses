@@ -1,0 +1,25 @@
+ 04-function.html
+ 
+  une fonction est un bloc de code conçu pour effectuer une tâche spécifique. 
+Elle permet de regrouper des instructions, 
+de les réutiliser plusieurs fois et de rendre le code plus organisé et lisible.
+
+Fonction nommée : est levée (hoisted), ce qui signifie qu’elle peut être appelée même avant sa déclaration dans le code.
+
+saluer(); // Cela fonctionne car "saluer" est hoistée
+
+function saluer() {
+    console.log("Bonjour !");
+}
+---------------
+
+
+Les fonctions nommées avec paramètres en permettent de créer des fonctions avec un nom défini et d’accepter des valeurs d'entrée (appelées paramètres). 
+Ces paramètres rendent les fonctions flexibles, car ils permettent d’utiliser des valeurs dynamiques lorsque la fonction est appelée.
+function saluer(nom) {
+    console.log("Bonjour, " + nom + " !");
+}
+Quand tu appelles une fonction avec des paramètres, tu passes des arguments (les valeurs pour chaque paramètre) entre les parenthèses. 
+Ces arguments vont remplacer les paramètres dans le corps de la fonction.
+saluer("Alice"); // Affiche "Bonjour, Alice !"
+saluer("Bob");   // Affiche "Bonjour, Bob !"
