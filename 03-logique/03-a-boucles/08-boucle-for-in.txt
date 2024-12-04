@@ -1,0 +1,16 @@
+//////////////////
+08-forIn.html
+/*
+for...in
+Itère sur les clés ou indices des propriétés énumérables d’un objet.
+S’applique aussi bien aux objets classiques qu’aux tableaux, 
+mais il ne retourne pas les valeurs, seulement les clés ou indices.
+
+    const fruits = ['pomme', 'banane', 'cerise'];
+
+    for (const index in fruits) {
+        console.log(index); // Affiche les indices : "0", "1", "2"
+        console.log(fruits[index]); // Accède aux valeurs : "pomme", "banane", "cerise"
+    }
+
+*/
