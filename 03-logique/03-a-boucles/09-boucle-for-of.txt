@@ -1,0 +1,10 @@
+08-forOff.html
+La boucle for...of est utilisée pour parcourir facilement les éléments d'une collection
+Sa syntaxe est concise et lisible
+
+            for (const element of iterable) {
+            // Code à exécuter pour chaque élément
+            }
+            iterable : Un objet qui peut être itéré (Array, String ).
+            element : La valeur courante de l'itération.
+ ----------------
