@@ -1,0 +1,12 @@
+les événements
+
+
+Les événements permettent de réagir aux interactions des utilisateurs ou aux changements qui se produisent dans la page. 
+Ces interactions incluent des clics, des saisies, des mouvements de la souris, ou des actions comme le chargement de la page.
+
+Qu'est-ce qu'un événement ?
+    Un événement est une action ou un déclencheur qui se produit dans le navigateur, comme :
+    •	L'utilisateur clique sur un bouton.
+    •	Une touche est enfoncée.
+    •	La souris passe sur un élément.
+    •	Une image est chargée.
