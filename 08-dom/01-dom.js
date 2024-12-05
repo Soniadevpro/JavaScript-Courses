@@ -27,13 +27,20 @@ const span = document.querySelector(".conteneur span");
 
 // <!--5 sélectionne tous les <li> et affiche leur contenu un par un dans la console. -->
 
-const list = document.querySelector('li')
-console.log(list);
+// 5
+const items = document.querySelectorAll("ul li");
+items.forEach((item) => console.log(item.textContent));
 
 
 // <!--6 Sélectionne le div class box  et modifie sa classe pour qu’il devienne "box active". 
 
-const boxActive = document.querySelector('box')
+const boxActive = document.querySelector('.box')
+console.log(boxActive);
+if (boxActive) {
+    boxActive.classList.remove('inactive');
+    boxActive.classList.add('active');
+    console.log(boxActive);
+}
 
 
 
@@ -47,4 +54,6 @@ const boxActive = document.querySelector('box')
 // <!--7 Supprime le paragraphe <p>Texte à supprimer</p> . -->
 
 
-
+const supp = document.querySelector('#supprimer p')
+supp.remove()
+console.log(supp);
