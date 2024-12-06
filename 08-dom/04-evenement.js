@@ -30,15 +30,11 @@ carreMouse.style.background = 'red'
 // <!-- 3 Crée un formulaire dont la soumission ne recharge pas la page, et affiche "Formulaire soumis !" dans la console. -->
 
 
-
-const formulaire = document.getElementById('envoi')
-
-formulaire.addEventListener('submit', buttonClick);
-
-function buttonClick (e) {
-e.preventDefault()
-    console.log('formulaire soumis');
-}
+const formExemple = document.getElementById("formExemple");
+formExemple.addEventListener("submit", (event) => {
+  event.preventDefault();
+  console.log("Formulaire soumis !");
+}); 
 
 
 
@@ -46,14 +42,31 @@ e.preventDefault()
 
 // <!-- 4 Crée un champ de saisie qui affiche dans la console la touche appuyée par l'utilisateur. -->
 
+const champTouche = document.getElementById('champtouche')
 
+champTouche.addEventListener("keydown", (e) => {
+
+    console.log(e.key);
+
+})
 
 
 // <!-- 5 Crée un lien qui ne redirige pas vers son URL lorsqu'il est cliqué, et affiche "Lien désactivé" dans la console. -->
 
-
-
+const lienDesactive = document.getElementById('lienDesactive')
+lienDesactive.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log("lien désac");
+    
+})
 
 
 
 // <!-- 6 Crée un bouton qui affiche dans la console le nombre de clics réalisés dessus. -->
+
+const compteurClic = document.getElementById("compteurClic");
+      let clics = 0;
+      compteurClic.addEventListener("click", () => {
+        clics++;
+        console.log(`Clic : ${clics}`);
+      });

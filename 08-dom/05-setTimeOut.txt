@@ -1,0 +1,28 @@
+07-setTimeout.html
+
+La méthode setTimeout() permet d'exécuter une fonction ou un morceau de code après un délai spécifié en millisecondes. 
+Syntaxe : 	setTimeout(functionRef, delay, param1, param2, ...);
+		functionRef : La fonction à exécuter après le délai.
+        delay : Le délai en millisecondes avant l'exécution de la fonction.
+        param1, param2, ... : (Optionnel) Paramètres à passer à la fonction lors de son exécution.
+
+Exemple de base :
+	function saluer() {
+   		 console.log("Bonjour !");
+    }
+    setTimeout(saluer, 2000); // Affiche "Bonjour !" après 2 secondes
+
+Passer des paramètres à la fonction :
+		function saluer(nom) {
+    			console.log(`Bonjour, ${nom} !`);
+        }
+        setTimeout(saluer, 2000, "Alice"); // Affiche "Bonjour, Alice !" après 2 se-condes
+
+Annuler un setTimeout
+    La méthode setTimeout retourne un identifiant unique que vous pouvez utiliser pour annuler l'exécution planifiée en appelant clearTimeout
+    const identifiant = setTimeout(function() {
+        console.log("Ce message ne sera pas affiché.");
+    }, 5000);
+    clearTimeout(identifiant); // Annule l'exécution de la fonction
+Dans cet exemple, la fonction ne sera jamais exécutée car clearTimeout est appelé avant la fin du délai.
+ //////////////////////////////

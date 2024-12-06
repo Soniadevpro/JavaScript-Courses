@@ -1,0 +1,19 @@
+  setInterval
+La méthode setInterval() permet d'exécuter une fonction ou un morceau de code à intervalles réguliers spécifiés (en millisecondes). 
+Contrairement à setTimeout qui s'exécute une seule fois après un délai, setInterval continue à s'exécuter jusqu'à ce qu'il soit annulé.
+
+Syntaxe :  const intervalID = setInterval(function, delay, param1, param2, ...);
+        function : La fonction ou le code à exécuter.
+        delay : Le délai en millisecondes entre chaque exécution.
+        param1, param2, ... (optionnel) : Les paramètres à passer à la fonction.
+        intervalID : Un identifiant unique pour l'intervalle, utilisé pour l'annuler plus tard avec clearInterval.
+
+Exemple de base : Afficher un message toutes les 2 secondes
+		setInterval( () => {console.log("Bonjour !") }, 2000);
+
+Passer des paramètres à la fonction :
+		function afficherMessage(message) {   console.log(message) }
+        setInterval(afficherMessage, 1000, "Message récurrent"); 
+
+Annuler un setInterval
+Pour arrêter un intervalle, utilisez clearInterval avec l'identifiant retourné par setInterval.
