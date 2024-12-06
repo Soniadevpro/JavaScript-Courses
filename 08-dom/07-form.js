@@ -23,18 +23,21 @@ form.addEventListener('submit', (event) => { // on écoute l'événement submit 
 //  Si l'utilisateur clique sur le bouton sans rien écrire, affichez un message d'erreur sous le champ. -->
 
 
-const form2 = document.getElementById('texte');
 
-form2.addEventListener('submit', (event) => { // on écoute l'événement submit sur le formulaire
-    event.preventDefault(); 
-    if (form2.elements[0].value === '') { 
-        form2.elements[0].insertAdjacentHTML('afterend', '<p style="color: red;">Veuillez remplir ce champ</p>'); // on affiche un message d'erreur
-    } else {
-        console.log(form2.elements[0].value); 
-    }
-}
-);
+const form2 = document.getElementById("form2");
+const champNom = document.getElementById("champNom");
+const erreur = document.getElementById("erreur");
 
+form2.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  if (champNom.value.trim() === "") {
+    erreur.style.display = "block";
+  } else {
+    erreur.style.display = "none";
+    console.log(`Nom : ${champNom.value}`);
+  }
+});
 
 
 
@@ -47,7 +50,7 @@ const form3 = document.getElementById('2champs');
 form3.addEventListener('submit', (event) => { // on écoute l'événement submit sur le formulaire
     event.preventDefault(); 
     console.log(form3.elements[0].value); // on affiche la valeur du premier élément du formulaire (le champ texte) dans la console 
-    console.log(form3.elements[1].value); 
+    console.log(`${email.value}`); // on affiche la valeur du deuxième élément du formulaire (le champ email) dans la console
 }
 );
 
@@ -70,8 +73,8 @@ form4.addEventListener('submit', (event) => {
 
 
     const formData = new FormData(form4); // on crée un objet FormData à partir du formulaire
-
+console.log(formData); 
     for (let [key, value] of formData) { // pour chaque paire clé/valeur dans l'objet FormData
-        console.log(key, value); // on affiche la clé et la valeur dans la console
+        console.log(key, value); 
     }
 });
