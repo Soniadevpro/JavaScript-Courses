@@ -1,0 +1,67 @@
+Les formulaires sont une partie essentielle des pages web pour recueillir des données auprès des utilisateurs. 
+
+Exemple simple de formulaire :
+<form id="formulaire">
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom" required>
+    <button type="submit">Envoyer</button>
+</form>
+
+Accéder aux éléments d'un formulaire
+    Les éléments d'un formulaire peuvent être sélectionnés comme n'importe quel autre élément DOM.
+        const formulaire = document.getElementById('formulaire');
+        const champNom = document.getElementById('nom');
+        console.log(formulaire); // Affiche l'objet formulaire
+        console.log(champNom);   // Affiche l'élément input
+
+Soumission d’un formulaire
+    Événement submit
+    L'événement submit se déclenche lorsque l'utilisateur soumet le formulaire. 
+    Par défaut, cela recharge la page, mais on peut empêcher ce comportement avec event.preventDefault()
+        Exemple :
+            formulaire.addEventListener('submit', (event) => {
+                    event.preventDefault(); // Empêche le rechargement de la page
+                console.log('Formulaire soumis !');
+            });
+
+Lire la valeur d’un champ
+    Utilisez la propriété .value pour obtenir la valeur d’un champ de formulaire.
+        console.log(champNom.value); // Affiche le contenu du champ "nom"
+
+Modifier la valeur d’un champ
+    champNom.value = "Jean Dupont"; // Définit une nouvelle valeur dans le champ
+
+Validation des formulaires
+    Vérifier si un champ est vide
+        if (champNom.value.trim() === "") {
+             console.log("Le champ Nom est vide.");
+            }
+Vérifier si un champ est valide
+    HTML5 propose des attributs comme required et des types spécifiques (email, number) pour simplifier la validation.
+    La méthode checkValidity() est utilisée pour vérifier si un élément de formulaire respecte toutes les contraintes de validation définies 
+    Elle retourne un booléen :
+        true : Si toutes les contraintes de validation sont respectées.
+        false : Si une ou plusieurs contraintes ne sont pas respectées.
+    Exemple : 
+       if (champNom.checkValidity()) { console.log("Le champ Nom est valide !") }
+ 
+Collecter et manipuler les données d'un formulaire
+L'objet FormData permet de collecter et manipuler les données d'un formulaire de ma-nière dynamique
+Création d'un Objet FormData :
+    const formulaire = document.getElementById('formExemple');
+    const formData = new FormData(formulaire);
+
+    Exemple :
+	HTML :
+        <form id="formExemple">
+                <input type="text" name="nom" value="Alice" />
+                <input type="email" name="email" value="alice@example.com" />
+                <button type="submit">Envoyer</button>
+        </form>
+	JavaScript :
+                const formulaire = document.getElementById('formExemple');
+                const formData = new FormData(formulaire); // Crée un objet FormData basé sur le formulaire
+                // Affiche toutes les paires clé-valeur
+                for (const [key, value] of formData.entries()) {
+                                console.log(`${key}: ${value}`);
+                }
